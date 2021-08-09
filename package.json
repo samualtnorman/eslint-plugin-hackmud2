@@ -1,25 +1,25 @@
 {
-  "name": "@samual/eslint-plugin-hackmud2",
-  "version": "0.3.2",
-  "description": "Linting rules for hackmud player-scripts",
-  "keywords": [
-    "eslint",
-    "eslintplugin",
-    "eslint-plugin",
-    "hackmud"
-  ],
-  "author": "Adam Bosco",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/samualtnorman/eslint-plugin-hackmud2"
-  },
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc"
-  },
-  "license": "MIT",
-  "files": [ "configs", "processors", "rules", "config.js", "config.d.ts", "index.d.ts" ],
-  "devDependencies": {
-    "typescript": "^4.3.5"
-  }
+	"name": "@samual/eslint-plugin-hackmud2",
+	"version": "0.3.2",
+	"description": "Linting rules for hackmud player-scripts",
+	"keywords": [
+		"eslint",
+		"eslintplugin",
+		"eslint-plugin",
+		"hackmud"
+	],
+	"author": "Adam Bosco",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/samualtnorman/eslint-plugin-hackmud2"
+	},
+	"main": "index.js",
+	"scripts": {
+		"build": "tsc"
+	},
+	"license": "MIT",
+	"files": [ "configs", "processors", "rules", "config.js", "config.d.ts", "index.d.ts" ],
+	"devDependencies": {
+		"typescript": "^4.3.5"
+	}
 }

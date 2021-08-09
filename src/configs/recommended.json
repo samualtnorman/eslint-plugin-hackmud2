@@ -1,20 +1,20 @@
 {
-  "env": {
-    "es6": true,
-    "@samual/hackmud2/hackmud": true
-  },
-  "extends": "eslint:recommended",
-  "rules": {
-    "no-unused-vars": "off",
-    "no-extend-native": "error",
-    "no-unreachable": "warn",
-    "no-constant-condition": "warn",
-    "no-eval": "error",
-    "no-fallthrough": "off",
-    "no-global-assign": "error",
-    "no-implied-eval": "error",
-    "no-global-return": "off",
-    "@samual/hackmud2/validate-subscript-syntax": "error",
-    "@samual/hackmud2/no-closure-identifier": "error"
-  }
+	"env": {
+		"es6": true,
+		"@samual/hackmud2/hackmud": true
+	},
+	"extends": "eslint:recommended",
+	"rules": {
+		"no-unused-vars": "off",
+		"no-extend-native": "error",
+		"no-unreachable": "warn",
+		"no-constant-condition": "warn",
+		"no-eval": "error",
+		"no-fallthrough": "off",
+		"no-global-assign": "error",
+		"no-implied-eval": "error",
+		"no-global-return": "off",
+		"@samual/hackmud2/validate-subscript-syntax": "error",
+		"@samual/hackmud2/no-closure-identifier": "error"
+	}
 }

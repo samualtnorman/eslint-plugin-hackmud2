@@ -10,10 +10,10 @@ import processors from './processors'
 import environment from './environment.json'
 
 export default {
-  rules,
-  processors,
-  configs,
-  environments: {
-    hackmud: environment
-  },
+	rules,
+	processors,
+	configs,
+	environments: {
+		hackmud: environment
+	},
 }

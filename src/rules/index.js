@@ -3,7 +3,7 @@ import noClosureIdentifier from './no-closure-identifier'
 import validateSubscriptSyntax from './validate-subscript-syntax'
 
 export default {
-  'no-closure-identifier': noClosureIdentifier,
-  // 'no-closure-siblings': noClosureSiblings,
-  'validate-subscript-syntax': validateSubscriptSyntax
+	'no-closure-identifier': noClosureIdentifier,
+	// 'no-closure-siblings': noClosureSiblings,
+	'validate-subscript-syntax': validateSubscriptSyntax
 }
