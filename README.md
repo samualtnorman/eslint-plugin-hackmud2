@@ -1,15 +1,8 @@
 # @samual/eslint-plugin-hackmud2
 
-This is a fork of [vacoon/bosconian-dynamics/Aniketos](https://github.com/bosconian-dynamics)'s package [of the same name](https://github.com/bosconian-dynamics/eslint-plugin-hackmud).
-This fork enables checking of typescript files, but to do this the `no-closure-siblings` rule had to be disabled due to [this](https://github.com/eslint/eslint/issues/13639) bug caused by [this](https://github.com/estools/esquery/pull/112) other bug.
-
-Once these are resolved, I will probably just pull request typscript checking into the main repo and be done with this one.
-
-# eslint-plugin-hackmud2
-
-[![npm](https://img.shields.io/npm/v/eslint-plugin-hackmud2.svg?style=plastic)](https://www.npmjs.com/package/eslint-plugin-hackmud2) [![license](https://img.shields.io/github/license/KuroTsuto/eslint-plugin-hackmud.svg?style=plastic)](https://github.com/KuroTsuto/eslint-plugin-hackmud/blob/master/LICENSE.md) [![npm](https://img.shields.io/npm/dt/eslint-plugin-hackmud2.svg?style=plastic)](https://www.npmjs.com/package/eslint-plugin-hackmud2)
-
 Linting rules for hackmud scripts.
+
+This is a fork of [vacoon/bosconian-dynamics/Aniketos](https://github.com/bosconian-dynamics)'s package [of the same name](https://github.com/bosconian-dynamics/eslint-plugin-hackmud) that enables checking of [TypeScript](https://www.typescriptlang.org/) files.
 
 ## Features
 
@@ -24,57 +17,19 @@ This plugin is somewhat hackish, at the moment - the largest caveat is that lint
 
 ## Installation
 
-Install the [ESLint](http://eslint.org) linter and `eslint-plugin-hackmud2`, either locally (in the directory containing your scripts, or an ancestor of it) or globally - if you don't know the difference I recommend the latter:
+1. Make sure you have [Node.js](https://nodejs.org/) installed.
+1. Open a terminal and `cd` to the folder containing your scripts.
+1. Run `npm install -D eslint @samual/eslint-plugin-hackmud2`.
+1. Create `.eslintrc.json` in that folder and dump the following into it:
+	```js
+	{
+		"plugins": [ "@samual/eslint-plugin-hackmud2" ],
+		"extends": "plugin:@samual/eslint-plugin-hackmud2/recommended"
+	}
+	```
 
-```
-$ npm install --global eslint eslint-plugin-hackmud2
-```
+<br>
 
-## Usage
+You can [find out](https://eslint.org/docs/user-guide/integrations) how to configure your editor to recognise eslint. Then when you open that folder in your editor, you'll have linting.
 
-To activate `eslint-plugin-hackmud2`, create a `.eslintrc.json` configuration file in the root work directories containing the script sources which you'd like to lint (or configure your linter/editor's linter plugin to use the configuration file in the location of your choice).
-
-Add `hackmud2` to the plugins section of your `.eslintrc.json` configuration file, and `"plugin:hackmud2/recommended"` as the base configuration:
-
-```json
-{
-  "plugins": [
-    "hackmud2"
-  ],
-  "extends": "plugin:hackmud2/recommended"
-}
-```
-
-If your scripts reside in the standard `hackmud/{user}/scripts` directories, most ESLint consumers should pick up on a single configuration file in the common `hackmud` directory.
-
-### Command line usage
-```
-$ eslint myscript.js
-```
-
-### IDE Support
-Many popular editors and IDEs support ESLint integration to provide visual indicators for validation rules. Try searching for how to enable ESLint support for your editor if it is not listed below.
-
-#### Atom
-Install the [Linter](https://atom.io/packages/linter) and [linter-eslint](https://atom.io/packages/linter-eslint) packages:
-
-```
-$ apm install linter
-$ apm install linter-eslint
-```
-
-If you installed `eslint`/`eslint-plugin-hackmud2` globally, check the "Use global ESLint installation" option in Settings > Packages > linter-eslint > Settings.
-
-#### Visual Studio Code
-Enable ESLint linting in your Workspace's settings - I also recommend disabling VSCode's TypeScript validation engine to suppress extraneous warnings. If it doesn't exist already, create a `.vscode` directory in your workspace root containing a `settings.json` file. Add the following lines:
-
-```json
-{
-    "javascript.validate.enable": false,
-    "eslint.enable": true
-}
-```
-
-## Supported Rules
-
-## TODO
+If you don't actually want editor integration, you can just run `npx eslint path/to/script.js` every time you want to lint a script (must be run from the folder with `.eslintrc.json`).
