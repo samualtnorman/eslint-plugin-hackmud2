@@ -1,0 +1,11 @@
+{
+	"files.exclude": {
+		"**/*.js": { "when": "$(basename).d.ts" },
+		"**/*.d.ts": true,
+		"configs": true,
+		"processors": true,
+		"rules": true,
+		"package-lock.json": true,
+		"node_modules": true
+	}
+}
