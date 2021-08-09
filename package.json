@@ -13,18 +13,13 @@
     "type": "git",
     "url": "https://github.com/samualtnorman/eslint-plugin-hackmud2"
   },
-  "main": "lib/index.js",
+  "main": "index.js",
   "scripts": {
-    "build": "babel ./src --out-dir ./lib --copy-files"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.7.0",
-    "eslint": "^3.19.0"
+    "build": "tsc"
   },
   "license": "MIT",
-  "files": [
-    "lib/**/*"
-  ]
+  "files": [ "configs", "processors", "rules", "config.js", "config.d.ts", "index.d.ts" ],
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
 }
