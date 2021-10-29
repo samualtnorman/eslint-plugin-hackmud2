@@ -1,4 +1,4 @@
-import recommended from './recommended'
+import recommended from './recommended.json'
 
 export default {
 	recommended

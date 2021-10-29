@@ -1,5 +1,3 @@
-import { SUBSCRIPT_PREFIX } from '../config.js'
-
 export const meta = {
 	docs: {
 		description: "validate subscript directive syntax",

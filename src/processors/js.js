@@ -1,9 +1,6 @@
 import {
-	SUBSCRIPT_PREFIX,
-	DATABASE_PREFIX,
-	PREPROC_G,
-	PREPROC_D,
-	PREPROC_FMCL
+	DATABASE_PREFIX, PREPROC_D,
+	PREPROC_FMCL, PREPROC_G
 } from '../config.js'
 
 function pre( text, filename ) {
