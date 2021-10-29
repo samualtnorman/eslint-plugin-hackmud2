@@ -16,6 +16,6 @@
 		"no-global-return": "off",
 		"@samual/hackmud2/validate-subscript-syntax": "error",
 		"@samual/hackmud2/no-closure-identifier": "error",
-		"hackmud2/no-closure-siblings": "error"
+		"@samual/hackmud2/no-closure-siblings": "error"
 	}
 }
