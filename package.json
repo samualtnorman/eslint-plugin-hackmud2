@@ -19,12 +19,10 @@
 	},
 	"license": "MIT",
 	"files": [
-		"configs",
-		"processors",
-		"rules",
-		"config.js",
-		"config.d.ts",
-		"index.d.ts"
+		"**/*.js",
+		"!src/**",
+		"**/*.d.ts",
+		"!rollup.config.js"
 	],
 	"devDependencies": {
 		"@rollup/plugin-json": "^4.1.0",
