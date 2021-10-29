@@ -1,6 +1,8 @@
-import jsProcessor from './js'
+import * as jsProcessor from "./js"
 
-export default {
-	'.js': jsProcessor,
-	'.ts': jsProcessor
+export const processors = {
+	".js": jsProcessor,
+	".ts": jsProcessor
 }
+
+export default processors

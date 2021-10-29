@@ -1,7 +1,5 @@
-import recommended from './recommended.json'
+import recommended from "./recommended.json"
 
-export {
-	recommended
-}
+export { recommended }
 
 //TODO: no-restricted-properties in recommended
