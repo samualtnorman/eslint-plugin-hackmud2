@@ -23,7 +23,8 @@ export default async () => ({
 		chunkFileNames: "[name]-.js",
 		generatedCode: "es2015",
 		interop: "auto",
-		compact: true
+		compact: true,
+		format: "commonjs"
 	},
 	plugins: [
 		json(),
