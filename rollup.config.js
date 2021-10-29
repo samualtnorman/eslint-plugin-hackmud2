@@ -24,7 +24,8 @@ export default async () => ({
 		generatedCode: "es2015",
 		interop: "auto",
 		compact: true,
-		format: "commonjs"
+		format: "commonjs",
+		exports: "named"
 	},
 	plugins: [
 		json(),
