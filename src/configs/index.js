@@ -1,8 +1,7 @@
 import recommended from './recommended.json'
 
-export default {
+export {
 	recommended
 }
-
 
 //TODO: no-restricted-properties in recommended

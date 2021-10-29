@@ -4,16 +4,11 @@
  */
 // TODO: take a look at using no-restricted-syntax
 
-import rules from './rules'
-import configs from './configs'
-import processors from './processors'
+export * as configs from './configs'
+export * as processors from './processors'
+export * as rules from './rules'
 import environment from './environment.json'
 
-export default {
-	rules,
-	processors,
-	configs,
-	environments: {
-		hackmud: environment
-	},
+export const environments = {
+	hackmud: environment
 }
